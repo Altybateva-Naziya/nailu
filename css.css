@@ -1,0 +1,16 @@
+.body{
+    height: 98vh;
+    width: 99.6%;
+    position: absolute;
+    display:inline-block;
+    padding: 0px;
+}
+.button{
+    background:url(button2.png);
+    z-index: 10;
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    display:inline-block;
+    padding: 0px;
+}
