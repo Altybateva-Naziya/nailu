@@ -1,16 +1,150 @@
+body{
+    margin: 0;
+}
 .body{
-    height: 98vh;
-    width: 99.6%;
-    position: absolute;
-    display:inline-block;
-    padding: 0px;
+    background-image: url("1.png");
+    background-size: 100% ;
+    background-repeat: no-repeat;
 }
 .button{
-    background:url(button2.png);
+    background:url(button3.png);
     z-index: 10;
-    width: 55px;
-    height: 55px;
+    width: 70px;
+    height: 70px;
     position: absolute;
     display:inline-block;
-    padding: 0px;
+    top:calc(50% - 10px);
+    left: calc(15% - 60px);
+    box-shadow:0 0 15px rgba(151, 143, 176, 0.7),
+                black 0 0 10px;
+    border-radius: 60px;
+}
+@font-face{
+ font-family: 'M';
+    src: url("MandatoryPlaything-nRRd0.ttf");
+  }
+
+@font-face{
+ font-family: 'N';
+    src: url("NebulousRegular-54aV.ttf");
+  }
+@font-face{
+ font-family: 'A';
+    src: url("Andromeda-eR2n.ttf");
+  }
+.I{
+    font-family: 'M' ;
+    opacity: 0;
+    z-index: 9999999999;
+    font-size: 110px;
+     text-shadow: #c9b8c3 0 0 16px, /* Свечение голубого цвета */
+      black 0 0 10px;
+}
+h1{
+    font-size: 90px;
+    line-height: 800px;
+}
+h1 span {
+    animation: animate 5.5s linear;
+}
+
+h1 span:nth-child(1) {
+
+    animation-delay: 0s;
+}
+
+h1 span:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+h1 span:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+h1 span:nth-child(4) {
+    animation-delay: 0.7s;
+}
+
+h1 span:nth-child(5) {
+    animation-delay: 0.9s;
+}
+
+h1 span:nth-child(6) {
+    animation-delay: 1.1s;
+}
+
+h1 span:nth-child(7) {
+    animation-delay: 1.3s;
+}
+
+@keyframes animate {
+
+    0%, 0% {
+        opacity: 1;
+    }
+    0%, 100% {
+        color: #000028;
+        filter: blur(0.7);
+    }
+}
+.o{
+    position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'M' ;
+    top:calc(50vh - 90px);
+    left: calc(50vw - 400px);
+    width: 800px;
+    text-shadow: black 0 0 3px;
+    color: #f9acbb;
+
+}
+
+.o span{
+    opacity: 0;
+        animation: animate-l 10s linear 6s;
+}
+@keyframes animate-l {
+    0%, 25%{
+    opacity: 0;
+    }
+     25%, 100%{
+    opacity: 1;
+    }
+}
+.L{
+    position: absolute;
+    font-size: 25px;
+    font-family: 'M' ;
+    top:calc(50vh + 132px);
+    left: calc(50vw + 200px);
+    text-shadow: black 0 0 3px;
+    color: #d1dbe2;
+
+}
+.L span{
+    opacity: 0;
+        animation: animate-2 9s linear 3s;
+}
+@keyframes animate-2 {
+    0%, 25%{
+    opacity: 0;
+    }
+     25%, 100%{
+    opacity: 1;
+    }
+}
+.u{
+    position: absolute;
+    font-size: 25px;
+    font-family: 'M' ;
+    top:calc(50vh + 132px);
+    left: calc(50vw + 340px);
+    text-shadow: black 0 0 3px;
+    color: #d1dbe2;
+
+}
+.u span {
+    opacity: 0;
+    animation: animate-2 8s linear 4s;
 }
