@@ -2,21 +2,31 @@ body{
     margin: 0;
 }
 .body{
-    background-image: url("11.png");
+    background-image: url("2.png");
     background-size: 100% ;
     background-repeat: no-repeat;
-    filter: brightness(75%);
+
+}
+.box{
+    top:0;
+    height: 100vh;
+    width: 16%;
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.45;
+    display: none;
 }
 .button{
-    background:url(button1.png);
-    z-index: 10;
-    width: 60px;
-    height: 60px;
+    background:url(button3.png);
+    z-index: 1;
+    width: 70px;
+    height: 70px;
     position: absolute;
     display:inline-block;
     top:calc(50% - 10px);
     left: calc(15% - 60px);
-    box-shadow:0 0 10px rgba(151, 143, 176, 0.7);
+    box-shadow:0 0 15px rgba(151, 143, 176, 0.7),
+                black 0 0 10px;
     border-radius: 60px;
 }
 @font-face{
@@ -35,14 +45,14 @@ body{
 .I{
     font-family: 'M' ;
     opacity: 0;
-    z-index: 9999999999;
+    z-index: 2;
     font-size: 110px;
-     text-shadow: rgba(198, 147, 198, 0.82) 0 0 15px, /* Свечение голубого цвета */
+     text-shadow: #c9b8c3 0 0 16px, /* Свечение голубого цвета */
       black 0 0 10px;
 }
 h1{
     font-size: 90px;
-    line-height: 800px;
+    line-height: 660px;
 }
 h1 span {
     animation: animate 5.5s linear;
@@ -83,7 +93,7 @@ h1 span:nth-child(7) {
         opacity: 1;
     }
     0%, 100% {
-        color: #03DAC6;
+        color: #000028;
         filter: blur(0.7);
     }
 }
@@ -96,7 +106,7 @@ h1 span:nth-child(7) {
     left: calc(50vw - 400px);
     width: 800px;
     text-shadow: black 0 0 3px;
-    color: #f8ff8a;
+    color: #f9acbb;
 
 }
 
@@ -111,4 +121,44 @@ h1 span:nth-child(7) {
      25%, 100%{
     opacity: 1;
     }
+}
+.L{
+    position: absolute;
+    font-size: 25px;
+    font-family: 'M' ;
+    top:calc(50vh + 132px);
+    left: calc(50vw + 200px);
+    text-shadow: black 0 0 3px;
+    color: #d1dbe2;
+
+}
+.L span{
+    opacity: 0;
+        animation: animate-2 9s linear 3s;
+}
+@keyframes animate-2 {
+    0%, 25%{
+    opacity: 0;
+    }
+     25%, 100%{
+    opacity: 1;
+    }
+}
+.u{
+    position: absolute;
+    font-size: 25px;
+    font-family: 'M' ;
+    top:calc(50vh + 132px);
+    left: calc(50vw + 340px);
+    text-shadow: black 0 0 3px;
+    color: #d1dbe2;
+
+}
+.u span {
+    opacity: 0;
+    animation: animate-2 8s linear 4s;
+}
+.planets{
+    color: whitesmoke;
+    font-size: 30px;
 }
